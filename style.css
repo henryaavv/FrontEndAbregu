@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*********************header**********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+/* Resetear los márgenes y relleno para el cuerpo de la página */
+body,
+ul {
+    transition: background-color 0.4s, color 0.4s;
+    margin: 0;
+    padding: 0;
+}
+
+.container-top {
+    background-color: rgb(90, 90, 90);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header-left .redes {
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+}
+
+.redes li {
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.header-left .redes a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-left .redes:hover a{
+ color: #338ccc;
+}
+/********************************************************************************/
+.header-right .redes {
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+}
+
+.header-right .redes a{
+    display: inline-block;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+}
+
+.header-right a i {
+    font-size: 1em; 
+    margin: 0.5rem 0.2rem;
+    color: #fdf7f7;
+}
+
+
+.header-right .redes:hover a i{
+    color: rgb(153, 204, 230);
+}
+
+/* Estilos para modo *************************************** */
+.app {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-image: linear-gradient(#444444, #bfbec2);
+}
+
+.app:hover {
+    transform: scale(1.2);
+}
+/************************************************************************************************************/
+.light-mode {
+    background-color: white;
+    color: #333;
+}
+
+/* Estilos para modo claro */
+.light-mode .machine-modal {
+    background-color: white;
+    color: #333;
+}
+
+/* Estilos para modo oscuro */
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+/* Estilos para modo oscuro */
+.dark-mode .machine-modal {
+    background-color: #333;
+    color: white;
+}
+/*******************************************************************************************************************/
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: rgba(54, 53, 53, 0.98);
+}
+
+/* Centrar y separar el contenido de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links li:hover {
+    background-color: #80808080;
+}
+
+.nav-links li:hover a {
+    color: rgb(153, 204, 230);
+}
+
+.logo div {
+    display: flex;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    gap: 1rem;
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 90%;
+}
+
+.logo h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    font-style: italic;
+    padding-top: 1.2rem;
+    color: white;
+}
+
+/* Estilos para los elementos de navegación */
+.nav-links {
+    width: 1025px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-links li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item {
+    position: relative;
+    text-align: center;
+    padding-top: 2.5rem;
+    width: 18rem;
+    height: 6.8rem;
+    /* margin-right: 20px; Espacio entre elementos del menú */
+}
+
+.menu-item:hover {
+    display: block;
+    /* Mostrar el menú desplegable al pasar el mouse */
+}
+
+.sublimado-display {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.card-content img {
+    width: 25rem;
+}
+
+.machine-modal {
+    position: absolute;
+    top: 100%;
+    right: calc(110% - (1492px/2));
+    z-index: 1000;
+    float: left;
+    min-width: 16rem;
+    height: 25rem;
+    padding: 5px 0;
+    display: none;
+    margin: 0 auto;
+    font-size: 14px;
+    list-style: none;
+    background-color: #eae8e8;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+
+.impUV {
+    right: calc(140% - (690px/2));
+}
+
+.sublimado {
+    right: calc(236% - (732px/2));
+}
+/*****************************************************************************************************************/
+/**************************************************************************************/
+.home-gallery{
+    background: rgb(89, 89, 89);
+    width: 100%;
+    height: 440px;
+    text-align: center;
+    /*padding: 0px 30px 30px*/
+}
+.home-gallery h3 {
+    font-family: SFCompactDisplay-Medium;
+    font-size: 50px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+
+/***********************************************************************************************/
+.footer-redes{
+    background-color: rgb(39, 109, 155);
+    width: 100%;
+    height: 200px;
+    padding: 5rem;
+}
+
+.footer-redes h3{
+    text-align: center;
+    font-size: 40px;
+    color: white;  
+
+}
+
+.link-redes{
+    display: flex;
+    justify-content: center;
+    color: white;
+    /* padding: 5rem; */
+}
+
+.link-redes a i {
+    font-size: 3em; 
+    margin: 10px; 
+    color: #fdf7f7;
+}
+
+.link-redes a {
+    display: inline-block;
+    min-height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 30%;
+    color: #fdf7f7;
+    transition: all .5s ease;
+}
+
+.link-redes a:hover {
+    background-color: #81a8b5;
+}
+
+
+/*****************************************************************************************/
+.footer {
+    background-color: #3e4346;
+    padding: 8rem 0;
+    height: 500px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex-basis: calc(25% - 20px);
+    padding: 20px;
+}
+
+.footer-about div{
+    display: flex;
+    justify-content: flex-start;
+    margin: -1.5rem 0rem 3.6rem 1rem;
+    padding-left: 1rem;
+}
+
+.footer-about div h4{
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 1.8rem 0 0 0.5rem;
+}
+
+.footer-about img{
+    width: 20%;
+}
+
+.footer-links{
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-links li{
+    list-style: none;
+}
+
+
+.footer-links h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 3px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+color: #00C3FF;
+transform: scale(1.1);
+
+}
+
+.footer-links {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    margin-bottom: 20px;
+  }
+  
+  /* Aumenta el tamaño de los inputs y textarea */
+  .footer-links input[type="text"],
+  .footer-links input[type="email"],
+  .footer-links input[type="phone"],
+  .footer-links textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0.800px solid rgba(255, 255, 255, 0.2);
+    background-color: #3e4346;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  /* Asegúrate de que el botón también tenga suficiente espacio */
+  .btn-toolbar button{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-transform: capitalize;
+    padding: 10px;
+    background: rgb(55, 148, 205);
+    border-width: 1px;
+    border: 0.800px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-toolbar button:hover{
+    background-color: rgb(28, 28, 33);
+    color: #00aaff; 
+  }
+  
+ 
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+/*********************main*******************************************/
+.productos-primarios {
+    padding: 20px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; /* Espacio entre las celdas */
+    
+}
+
+.producto-enlace {
+    /* Estilos para cada enlace de producto */
+    /* Por ejemplo: width, height, background, etc. */
+    background-color: rgba(48, 81, 214, 0.857);
+    padding: 20px;
+    color:white;
+    border: 1px solid;
+}
+
+
+.productos-secundarios {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px; /* Espacio entre las celdas */
+    
+}
+
+.producto-secundario-enlace{
+    background-color: rgba(15, 75, 10, 0.857);
+    padding: 20px;
+}
+
+.informacion{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Espacio entre las celdas */
+}
+
+.informacion-nosotros{
+    background-color: rgba(186, 45, 148, 0.857);
+    gap: 20px; /* Espacio entre las celdas */
+}
+
+.informacion-soporte{
+    background-color: rgba(186, 45, 148, 0.857);
+    padding: 20px;
+}
+
+.galeria-videos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px; 
+}
+
+.contenedor-videos{
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas con ancho flexible */
+    gap: 20px; /* Espacio entre las celdas */
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(137, 137, 133, 0.857);
+}
+
+.video{
+    background-color: rgba(231, 204, 51, 0.857);
+}
+
+.categorias{
+    background-color: rgb(245, 248, 247);
+    padding: 20px;
+}
+
+.contenedor-cartas{
+    /*se tiene que trasladar*/
+    display: grid;
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: repeat(8, 1fr);
+    gap:20px;
+   
+}
+
+.cartas{
+background-color: brown;
+ 
+}
+
+@media (max-width: 1024px) {
+    .productos-secundarios, .informacion, .contenedor-videos {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+}
+
+
+@media (max-width: 425px) {
+    .productos-primarios, .productos-secundarios, .informacion {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+        padding: 20px; /* Eliminar el padding existente */
+    }
+}
+
+
+
+
+
+
+
+
+
+
