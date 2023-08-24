@@ -72,6 +72,20 @@ menuItems.forEach((menuItem) => {
   });
 });
 
+/****GALERIA DE VIDEOSSSSSS */
+document.addEventListener('DOMContentLoaded', function () {
+    let mySwiper = new Swiper('.swiper-container', {
+        slidesPerView: 3, // Muestra 3 videos a la vez
+        spaceBetween: 10, // Espacio entre los videos
+        loop: true, // Crea un bucle de desplazamiento
+        autoplay: {
+            delay: 3000, // Cambia los videos cada 3 segundos
+            disableOnInteraction: false, // Permite que el autoplay continúe después de la interacción del usuario
+        },
+    });
+});
+
+
 /*modo oscuro y claro*/
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
