@@ -1,0 +1,116 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+/*********************main*******************************************/
+.productos-primarios {
+    padding: 20px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; /* Espacio entre las celdas */
+    
+}
+
+.producto-enlace {
+    /* Estilos para cada enlace de producto */
+    /* Por ejemplo: width, height, background, etc. */
+    background-color: rgba(48, 81, 214, 0.857);
+    padding: 20px;
+    color:white;
+    border: 1px solid;
+}
+
+
+.productos-secundarios {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px; /* Espacio entre las celdas */
+    
+}
+
+.producto-secundario-enlace{
+    background-color: rgba(15, 75, 10, 0.857);
+    padding: 20px;
+}
+
+.informacion{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Espacio entre las celdas */
+}
+
+.informacion-nosotros{
+    background-color: rgba(186, 45, 148, 0.857);
+    gap: 20px; /* Espacio entre las celdas */
+}
+
+.informacion-soporte{
+    background-color: rgba(186, 45, 148, 0.857);
+    padding: 20px;
+}
+
+.galeria-videos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px; 
+}
+
+.contenedor-videos{
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas con ancho flexible */
+    gap: 20px; /* Espacio entre las celdas */
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(137, 137, 133, 0.857);
+}
+
+.video{
+    background-color: rgba(231, 204, 51, 0.857);
+}
+
+.categorias{
+    background-color: rgb(245, 248, 247);
+    padding: 20px;
+}
+
+.contenedor-cartas{
+    /*se tiene que trasladar*/
+    display: grid;
+    padding: 20px 20px 20px 20px;
+    grid-template-columns: repeat(8, 1fr);
+    gap:20px;
+   
+}
+
+.cartas{
+background-color: brown;
+ 
+}
+
+@media (max-width: 1024px) {
+    .productos-secundarios, .informacion, .contenedor-videos {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+}
+
+
+@media (max-width: 425px) {
+    .productos-primarios, .productos-secundarios, .informacion {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+        padding: 20px; /* Eliminar el padding existente */
+    }
+}
+
+
+
+
+
+
+
+
+
+

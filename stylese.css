@@ -1,10 +1,8 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-/*********************header**********************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
@@ -65,7 +63,7 @@ ul {
 }
 
 .header-right a i {
-    font-size: 1em; 
+    font-size: 1em;
     margin: 0.5rem 0.2rem;
     color: #fdf7f7;
 }
@@ -262,7 +260,7 @@ ul {
 .footer-redes h3{
     text-align: center;
     font-size: 40px;
-    color: white;  
+    color: white;
 
 }
 
@@ -274,8 +272,8 @@ ul {
 }
 
 .link-redes a i {
-    font-size: 3em; 
-    margin: 10px; 
+    font-size: 3em;
+    margin: 10px;
     color: #fdf7f7;
 }
 
@@ -376,7 +374,7 @@ transform: scale(1.1);
 .footer-column {
     margin-bottom: 20px;
   }
-  
+
   /* Aumenta el tamaño de los inputs y textarea */
   .footer-links input[type="text"],
   .footer-links input[type="email"],
@@ -390,7 +388,7 @@ transform: scale(1.1);
     box-sizing: border-box;
     cursor: pointer;
   }
-  
+
   /* Asegúrate de que el botón también tenga suficiente espacio */
   .btn-toolbar button{
     width: 100%;
@@ -406,133 +404,80 @@ transform: scale(1.1);
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
   }
-  
+
   .btn-toolbar button:hover{
     background-color: rgb(28, 28, 33);
-    color: #00aaff; 
+    color: #00aaff;
   }
-  
- 
-  
-  
-  
-  
-  
 
+  .icono-mapa{
+    background-image: url(./imagenes/mapa.png);
+  }
 
-
-
-
-
-
-
-/*********************main*******************************************/
-.productos-primarios {
-    padding: 20px 20px 0px 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px; /* Espacio entre las celdas */
-    
+  /*redes de la izquierda de main*/
+.elements-lists{
+    height: 0px;
+    position: fixed;
 }
 
-.producto-enlace {
-    /* Estilos para cada enlace de producto */
-    /* Por ejemplo: width, height, background, etc. */
-    background-color: rgba(48, 81, 214, 0.857);
-    padding: 20px;
-    color:white;
-    border: 1px solid;
+span.elements-social-icon a, span.elements-social-icon {
+    color: rgb(255, 255, 255);
+    float: start;
+    position: relative;
+    text-align: center;
+    line-height: 53px;
+    font-size: 5rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
 }
 
-
-.productos-secundarios {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px; /* Espacio entre las celdas */
-    
+.elements-social-icon {
+    position: relative;
+    display: inline-block;
+    padding: 0 0.5rem 0 0 ;
+    line-height: 53px;
+    font-size: 5rem;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    overflow: visible; /* Ajusta el overflow para mostrar la franja */
 }
 
-.producto-secundario-enlace{
-    background-color: rgba(15, 75, 10, 0.857);
-    padding: 20px;
+.elements-social-icon a {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    z-index: 2; /* Coloca el enlace por encima de la franja */
 }
 
-.informacion{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px; /* Espacio entre las celdas */
+.elements-social-icon .button-text {
+    font-size: 2rem;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    top: 0;
+    left: -200px; /* Posición inicial fuera de la vista */
+    width: 200px;
+    height: 100%;
+    background-color: rgb(46, 184, 117);
+    color: #fff;
+    line-height: 53px;
+    text-align: center;
+    transition: left 1s ease;
+    z-index: 1; /* Coloca la franja por encima del enlace */
 }
 
-.informacion-nosotros{
-    background-color: rgba(186, 45, 148, 0.857);
-    gap: 20px; /* Espacio entre las celdas */
-}
-
-.informacion-soporte{
-    background-color: rgba(186, 45, 148, 0.857);
-    padding: 20px;
-}
-
-.galeria-videos {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 20px; 
-}
-
-.contenedor-videos{
-    display: grid;
-    
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas con ancho flexible */
-    gap: 20px; /* Espacio entre las celdas */
-    padding: 20px 20px 20px 20px;
-    background-color: rgba(137, 137, 133, 0.857);
-}
-
-.video{
-    background-color: rgba(231, 204, 51, 0.857);
-}
-
-.categorias{
-    background-color: rgb(245, 248, 247);
-    padding: 20px;
-}
-
-.contenedor-cartas{
-    /*se tiene que trasladar*/
-    display: grid;
-    padding: 20px 20px 20px 20px;
-    grid-template-columns: repeat(8, 1fr);
-    gap:20px;
-   
-}
-
-.cartas{
-background-color: brown;
- 
-}
-
-@media (max-width: 1024px) {
-    .productos-secundarios, .informacion, .contenedor-videos {
-        grid-template-columns: 1fr; /* Cambiar a una sola columna */
-    }
+.elements-social-icon .button-text2{
+    background-color:  rgb(49, 154, 196);
 }
 
 
-@media (max-width: 425px) {
-    .productos-primarios, .productos-secundarios, .informacion {
-        grid-template-columns: 1fr; /* Cambiar a una sola columna */
-        padding: 20px; /* Eliminar el padding existente */
-    }
+.elements-social-icon .button-text3{
+    background-color:  rgb(208, 81, 67);
 }
 
-
-
-
-
-
-
-
+.elements-social-icon:hover .button-text {
+    left: 0; /* Muestra la franja al pasar el mouse */
+    transition: left 1s ease; /* Elimina el delay en la vuelta */
+}
 
 
