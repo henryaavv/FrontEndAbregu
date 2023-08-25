@@ -86,11 +86,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-/*modo oscuro y claro*/
+/*modo oscuro y claro
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
 themeToggle.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
   body.classList.toggle('light-mode');
-});
+})*/
