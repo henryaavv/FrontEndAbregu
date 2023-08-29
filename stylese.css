@@ -9,15 +9,7 @@
 html {
     font-size: 62.5%;
 }
-
-/* Resetear los márgenes y relleno para el cuerpo de la página */
-body,
-ul {
-    transition: background-color 0.4s, color 0.4s;
-    margin: 0;
-    padding: 0;
-}
-
+/* Estilos compartidos para íconos de redes sociales */
 .container-top {
     background-color: rgb(90, 90, 90);
     display: flex;
@@ -25,91 +17,35 @@ ul {
     padding: 1rem;
 }
 
-.header-left .redes {
+.redes {
     display: flex;
-    justify-content: left;
+    list-style: none;
     gap: 2rem;
 }
 
-.redes li {
-    font-family: 'Roboto', sans-serif;
-    list-style: none;
+.redes li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
     font-size: 1.5rem;
 }
 
-.header-left .redes a{
-    text-decoration: none;
-    color: white;
+.redes li:hover a {
+    color: #338ccc;
 }
 
-.header-left .redes:hover a{
- color: #338ccc;
-}
-/********************************************************************************/
-.header-right .redes {
-    display: flex;
-    justify-content: left;
-    gap: 2rem;
-}
-
-.header-right .redes a{
-    display: inline-block;
+/* Estilos específicos para íconos de redes sociales en la parte superior derecha */
+.header-right .redes a {
     width: 30px;
+    height: 30px;
     background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
     border-radius: 50%;
     color: #FFFFFF;
-    transition: all .5s ease;
-}
-
-.header-right a i {
-    font-size: 1em;
-    margin: 0.5rem 0.2rem;
-    color: #fdf7f7;
-}
-
-
-.header-right .redes:hover a i{
-    color: rgb(153, 204, 230);
-}
-
-/* Estilos para modo *************************************** */
-.app {
-    width: 4rem;
-    height: 2rem;
-    border-radius: 2rem;
-    border: none;
-    cursor: pointer;
-    font-weight: 300;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    background-image: linear-gradient(#444444, #bfbec2);
-}
-
-.app:hover {
-    transform: scale(1.2);
-}
-/************************************************************************************************************/
-.light-mode {
-    background-color: white;
-    color: #333;
-}
-
-/* Estilos para modo claro */
-.light-mode .machine-modal {
-    background-color: white;
-    color: #333;
-}
-
-/* Estilos para modo oscuro */
-.dark-mode {
-    background-color: #333;
-    color: white;
-}
-
-/* Estilos para modo oscuro */
-.dark-mode .machine-modal {
-    background-color: #333;
-    color: white;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    justify-content: center;
 }
 /*******************************************************************************************************************/
 /* Estilos de la barra de navegación */
@@ -135,22 +71,20 @@ ul {
 .logo div {
     display: flex;
     justify-content: center;
-    width: 7rem;
     height: 7rem;
     gap: 1rem;
 }
 
-/* Estilos para el logo */
+/* Estilos para el logo ******************************************************************************************/
 .logo img {
-    width: 90%;
+    width: 70%;
 }
 
 .logo h2 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 3rem;
     font-style: italic;
-    padding-top: 1.2rem;
+    padding-top: 1.6rem;
     color: white;
 }
 
@@ -165,9 +99,7 @@ ul {
 }
 
 .nav-links li {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
+    font: 400 1.6rem 'Roboto', sans-serif;
 }
 
 .nav-links a {
@@ -181,24 +113,23 @@ ul {
     padding-top: 2.5rem;
     width: 18rem;
     height: 6.8rem;
-    /* margin-right: 20px; Espacio entre elementos del menú */
+    transition: display 0.3s ease;
 }
 
-.menu-item:hover {
+.menu-item:hover .machine-modal{
     display: block;
     /* Mostrar el menú desplegable al pasar el mouse */
 }
 
 .sublimado-display {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     gap: 3rem;
 }
 
-.card-content h2 {
-    font-size: 1.5rem;
-    font-weight: 100;
-}
+/*.card-content h2 {
+    font: 1.2rem;
+}*/
 
 .card-content img {
     width: 25rem;
@@ -230,16 +161,15 @@ ul {
 .sublimado {
     right: calc(236% - (732px/2));
 }
-/*****************************************************************************************************************/
-/**************************************************************************************/
-.home-gallery{
+/************GALERIA DE VIDEOS*****************************************************************************************************/
+.gallery-videos{
     background: rgb(89, 89, 89);
     width: 100%;
     height: 440px;
     text-align: center;
     /*padding: 0px 30px 30px*/
 }
-.home-gallery h3 {
+.gallery-videos h3 {
     font-family: SFCompactDisplay-Medium;
     font-size: 50px;
     font-weight: normal;
@@ -249,26 +179,26 @@ ul {
     text-transform: capitalize;
 }
 
-/***********************************************************************************************/
-.footer-redes{
+/*************SIGUENOSSSSSSS**********************************************************************************/
+.siguenos{
     background-color: rgb(39, 109, 155);
-    width: 100%;
     height: 200px;
     padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
 }
 
-.footer-redes h3{
-    text-align: center;
+.siguenos h3{
     font-size: 40px;
-    color: white;
-
 }
 
 .link-redes{
     display: flex;
     justify-content: center;
-    color: white;
-    /* padding: 5rem; */
+    gap: 2rem;
 }
 
 .link-redes a i {
@@ -279,12 +209,11 @@ ul {
 
 .link-redes a {
     display: inline-block;
+    align-items: center;
+    justify-content: center;
     min-height: 50px;
     width: 50px;
     background-color: rgba(255, 255, 255, 0.2);
-    margin: 10px;
-    text-align: center;
-    line-height: 40px;
     border-radius: 30%;
     color: #fdf7f7;
     transition: all .5s ease;
@@ -295,14 +224,21 @@ ul {
 }
 
 
-/*****************************************************************************************/
+/*****************FOOTERRRRRRRRRRR************************************************************************/
 .footer {
     background-color: #3e4346;
-    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 2rem;
     height: 500px;
 }
 
 .container {
+    width: 100%;
+    margin-top: 50px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -311,12 +247,14 @@ ul {
 .footer-column {
     flex-basis: calc(25% - 20px);
     padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer-about div{
     display: flex;
-    justify-content: flex-start;
-    margin: -1.5rem 0rem 3.6rem 1rem;
+    align-items: center;
+    margin: -1.5rem 0 3.6rem 1rem;
     padding-left: 1rem;
 }
 
@@ -330,15 +268,14 @@ ul {
     width: 20%;
 }
 
-.footer-links{
-    width: 20%;
-    padding: 0 15px;
+.footer-links, .btn-toolbar{
+    width: 100%;
+   margin-bottom: 30px;
 }
 
 .footer-links li{
     list-style: none;
 }
-
 
 .footer-links h3 {
     font-size: 20px;
@@ -349,7 +286,6 @@ ul {
     padding-bottom: 10px;
     display: inline-block;
 }
-
 
 .footer-links ul li a {
     font-size: 18px;
@@ -365,16 +301,6 @@ color: #00C3FF;
 transform: scale(1.1);
 
 }
-
-.footer-links {
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.footer-column {
-    margin-bottom: 20px;
-  }
-
   /* Aumenta el tamaño de los inputs y textarea */
   .footer-links input[type="text"],
   .footer-links input[type="email"],
@@ -383,72 +309,55 @@ transform: scale(1.1);
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 0.800px solid rgba(255, 255, 255, 0.2);
-    background-color: #3e4346;
+    border: 0.900px solid rgba(30, 29, 29, 0.2);
+    background-color: #3a3c3d;
     box-sizing: border-box;
     cursor: pointer;
   }
-
   /* Asegúrate de que el botón también tenga suficiente espacio */
   .btn-toolbar button{
     width: 100%;
     margin-bottom: 10px;
     text-align: center;
     color: rgb(255, 255, 255);
-    width: 100%;
     text-transform: capitalize;
     padding: 10px;
     background: rgb(55, 148, 205);
     border-width: 1px;
-    border: 0.800px solid rgba(255, 255, 255, 0.2);
+    border: 0.800px solid rgba(65, 65, 65, 0.2);
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: 0.3s, color 0.3s;
   }
 
   .btn-toolbar button:hover{
     background-color: rgb(28, 28, 33);
     color: #00aaff;
   }
-
-  .icono-mapa{
-    background-image: url(./imagenes/mapa.png);
-  }
-
-  /*redes de la izquierda de main*/
-.elements-lists{
-    height: 0px;
+  /*redes de la izquierda de main************************************************************/
+.elements-lists {
     position: fixed;
-    margin-top: 25rem;
-}
-
-span.elements-social-icon a, span.elements-social-icon {
-    color: rgb(255, 255, 255);
-    float: start;
-    position: relative;
-    text-align: center;
-    line-height: 53px;
-    font-size: 5rem;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    border-radius: 0 10px 10px 0;
+    top: 25rem;
 }
 
 .elements-social-icon {
     position: relative;
     display: inline-block;
-    padding: 0 0.5rem 0 0 ;
-    line-height: 53px;
-    font-size: 5rem;
+    padding: 0 0.5rem 0 0;
+    line-height: 45px;
+    width: 40px;
+    font-size: 3.5rem;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
-    overflow: visible; /* Ajusta el overflow para mostrar la franja */
+    overflow: visible;
+    transition: all 0.5s ease;
 }
 
 .elements-social-icon a {
     color: rgb(255, 255, 255);
     text-align: center;
+    font-size: 20px;
     display: block;
-    z-index: 2; /* Coloca el enlace por encima de la franja */
+    z-index: 1;
 }
 
 .elements-social-icon .button-text {
@@ -456,106 +365,76 @@ span.elements-social-icon a, span.elements-social-icon {
     border-radius: 0 10px 10px 0;
     position: absolute;
     top: 0;
-    left: -200px; /* Posición inicial fuera de la vista */
-    width: 200px;
+    left: -200px;
+    width: 150px;
     height: 100%;
     background-color: rgb(46, 184, 117);
     color: #fff;
-    line-height: 53px;
     text-align: center;
     transition: left 1s ease;
-    z-index: 1; /* Coloca la franja por encima del enlace */
+    z-index:-1;
 }
 
-.elements-social-icon .button-text2{
-    background-color:  rgb(49, 154, 196);
+.elements-social-icon .button-text2, .elements-social-icon .button-text3 {
+    background-color: rgb(49, 154, 196);
 }
 
-
-.elements-social-icon .button-text3{
-    background-color:  rgb(208, 81, 67);
+.elements-social-icon .button-text3 {
+    background-color: rgb(208, 81, 67);
 }
 
 .elements-social-icon:hover .button-text {
-    left: 0; /* Muestra la franja al pasar el mouse */
-    transition: left 1s ease; /* Elimina el delay en la vuelta */
+    left: 0;
 }
-
-/**BARRRAAAAA DE VIDEOOSSSSSSSSSSSSSSSSSSSSSSSSS*/
-/*GALERIA DE VIDEOS*/
-.home-gallery h3 {
-    font-family: SFCompactDisplay-Medium;
-    font-size: 50px;
-    margin: 2rem;
-    font-weight: normal;
-    font-stretch: normal;
-    line-height: 60px;
-    color: rgb(255, 255, 255);
-    text-transform: capitalize;
-}
-
-/* Slider CSS */
-.home-gallery {
+/*GALERIA DE VIDEOS************************************************************************************************/
+.home-gallery{
+    background: rgb(89, 89, 89);
     width: 100%;
-    max-width: 100%;
-    /*margin: 0 auto;*/
+    height: 440px;
     text-align: center;
-    overflow-x: hidden;
-  }
+}
 
 .swiper-container {
-    width: 90%;
-    height: 60%;
-}
-
-.swiper-slide video {
-    max-width: 100%;
-    cursor: pointer;
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .swiper-wrapper {
-    width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 30px 0 0 75px;
-    gap: 20px;
-  }
+    transition: transform 0.5s ease-in-out; /* Ajusta la duración de la transición */
+}
 
-  .swiper-slide {
-    width: 33.33%;
-    height: 100%;
+.swiper-slide {
+    flex: 0 0 calc(100% / 3);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-  }
-  .swiper-slide video {
-    width: 100%;
-    height: 100%;
-  }
-  .navegadores {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+    padding: 20px;
+    text-align: center;
+}
 
-  /*CATEGORIAS CSS */
+.swiper-slide button{
+    height: 30px;
+    width: 120px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 600;
+}
+
+.swiper-slide p{
+    margin-top: 1.8rem;
+    font-size: 20px;
+}
+
+.swiper-slide iframe,
+.swiper-slide video {
+    max-width: 100%;
+    max-height: 100%;
+}
+  /*CATEGORIAS CSS ****************************************************************************************/
 .categorias {
     padding: 35px 70px;
-    background: rgb(28, 28, 33);
+    background: rgb(45, 45, 48);
     width: 100%;
     text-align: center;
 }
@@ -565,18 +444,21 @@ span.elements-social-icon a, span.elements-social-icon {
     font-size: 2.5rem;
 }
 
-.categorias a{
+.categorias .ver-todos{
     padding: 6px 30px;
-    font-size: 10px;
-    font-weight: normal;
-    font-stretch: normal;
-    letter-spacing: 0px;
+    font-size: 20px;
     background: linear-gradient(rgb(46, 138, 184) 0%, rgb(67, 152, 208) 100%) rgb(46, 138, 184);
     display: inline-block;
     border-right: 1px solid rgb(77, 77, 77);
-    color: rgb(255, 255, 255);
+    color: white;
     margin: 40px;
-    transition: background-color 0.3s color  rgb(77, 77, 77); 
+    transition: transform 0.3s, 0.3s, color 0.3s;
+}
+
+.categorias .ver-todos:hover{
+  color: rgb(28, 28, 33);
+  background: linear-gradient(to right, #5ab0ed, #a3d8e9);
+  transform: scale(1.1);
 }
 
 .contenedor-cartas {
@@ -592,9 +474,20 @@ span.elements-social-icon a, span.elements-social-icon {
 
 .cartas img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     margin-top: 10px;
-    background-color: #7d7b7b;
+    background-color: #e1dcdc;
     object-fit: contain;  
+}
+
+.cartas a{
+    text-decoration: none;
+    font: 400 2rem rocoto;
+   color: white;
+   transition: 0.3s;
+}
+
+.cartas a:hover {
+    color: #00C3FF;
 }
