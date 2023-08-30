@@ -1,0 +1,137 @@
+/* Inicio cabecera superior */
+body{
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif; 
+    color:#333;
+    margin:0;
+
+    /* background-color: rgb(56, 65, 117);  */
+    background-color: rgb(219, 217, 217);
+
+
+    }
+
+.cabecera-top{
+background: rgba(89, 88, 88, 0.98);
+font-size: 14px;
+box-sizing: border-box;
+display:flex;
+justify-content: space-between;
+align-items: center;
+/* padding: 10px; */
+/* padding-right:15px; */
+/* padding-left: 15px; */
+}
+
+.cabecera-top ul{
+list-style: none;
+margin: 0;
+padding: 0;
+display:flex;
+align-items: center;
+}
+
+.cabecera-top li{
+margin-right: 15px;
+}
+
+.email-whatsapp, .redes-sociales{
+display: flex;
+list-style: none;
+margin:0;
+padding:0;
+}
+
+
+
+
+/*----*/
+.redes-sociales{
+/* margin-left: auto; */
+display:flex;
+/* margin:0; */
+/* padding:0; */
+/* align-items: start; */
+}
+
+/* div{display: block;} */
+
+
+
+.cabecera-contenedor{
+padding-right:15px;
+padding-left: 15px;
+
+/*padding*/
+/* margin-left: 91px; */
+/* margin-right: 91px; */
+
+margin-right: auto;
+margin-left:auto;
+/* box-sizing: border-box; */
+display: flex;
+
+/*preparar para la media query*/
+width: 1660px;
+/* align-items: center; */
+justify-content: space-between;
+}
+
+.cabecera-top .email-whatsapp li{
+padding-right: 15px;
+}
+
+li{
+list-style: none;
+display: list-item;
+}
+
+.cabecera-top li a{
+color: #fff;
+font-size: 13px;
+line-height: 30px;
+font-weight: 400;
+}
+
+a{
+cursor:pointer;
+text-decoration: none;
+transition: all 500ms ease;
+background: transparent;
+}
+
+.cabecera-contenedor .email-whatsapp li i{
+padding-right: 5px;
+}
+
+.espacio-cabecera{
+display: inline-block;
+text-rendering: auto;
+line-height: 1;
+
+}
+
+.espacio-redes{
+padding-right: 15px;
+}
+
+
+/* Efecto de letras */
+.email-whatsapp a,
+.redes-sociales a {
+/* color: #fff; */
+/* font-size: 13px; */
+text-decoration: none;
+transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+.email-whatsapp a:hover,
+.redes-sociales a:hover {
+color: #428bca; /* Cambio de color a azul en el estado hover */
+/* text-decoration: underline; Opcional: subrayar en hover */
+}
+
+
+/* Fin cabecera superior */
+
+
+
