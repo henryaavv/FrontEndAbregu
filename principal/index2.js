@@ -43,3 +43,22 @@ slider.addEventListener("mouseenter", stopSliderTimer);
 slider.addEventListener("mouseleave", startSliderTimer);
 
 startSliderTimer(); // Start the initial timer
+
+/**TRANSSICION DE GALERIA DE VIDEOS */
+const mySwiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+      delay: 5000 // Cambiar cada 5 segundos
+  },
+  on: {
+      slideChange: function () {
+          // Detener la reproducción de videos al cambiar de diapositiva
+          const videos = document.querySelectorAll('.swiper-slide video');
+          videos.forEach(video => {
+              video.pause();
+          });
+      }
+  }
+});
