@@ -1,0 +1,79 @@
+
+.footer{
+    
+}
+
+.container{
+
+    background-color: #333; 
+    /* width: 100%; */
+   max-width: 100vw; /* Ajusta el tamaño máximo del contenido */
+   text-align: center; 
+    /* //para comenzar en el final */
+  
+    /*para igualar con el menu desplegable*/
+   /*padding-left: 5%;*/
+  
+ 
+   display: flex;
+   align-items: center;
+justify-content: center;
+/* left: 50%; */
+min-height: 35vh;
+}
+
+.footer-column{
+    padding: 22px 16px;
+    width: 20%;
+}
+
+.footer-column h3, .footer-column h4{
+    color:#fff;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+ 
+    /* justify-content: center; */
+
+}
+
+
+div{
+    display: block;
+}
+
+form input, form textarea{
+
+    background-color: #333;
+   
+    /* padding: 10px 15px; */
+    width: 100%;
+    border: 1px solid #747373;
+    margin-bottom: 10px;
+    /* background-color: none; */
+    line-height: 1;
+}
+
+form ::placeholder{
+    color:#fff;
+    padding: 10px;
+}
+
+.footer-links li a{
+    color:#fff;
+    font-size: 10px;
+   
+}
+
+.footer-links li {
+    text-align: left;
+}
+
+
+
+.footer-links h3,.footer-about h4  {
+    text-align: left;
+}
