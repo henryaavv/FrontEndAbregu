@@ -66,13 +66,13 @@
      
  }
  
- 
+
  
    .navbar a:hover,
  .dropdown:hover .dropbtn {
     /* background-color: rgb(70, 65, 65); agrega color de fondo al pasar el mouse */
    color: rgba(18, 183, 212, 0.911); /* Cambia el color de la letra a celeste */
-   padding: 29px 16px;
+   /* padding: 29px 16px; */
  }
  
  
@@ -96,11 +96,12 @@
      border: none;
      outline: none;
      color: white; 
-     padding: 14px 16px;
+     /* padding: 14px 16px; */
      background-color: inherit;
      font-family: inherit;
      margin: 0;
  
+     padding: 29px 16px;
    }
  
   
@@ -144,9 +145,10 @@
      text-align: center;
      width: 33.33%; /* Dividir en 3 partes iguales */
      box-sizing: border-box; /* Incluir padding en el ancho */
+     height: 312px;
    }
  
-   .dropdown-content a:hover {
+   .dropdown-content:hover {
       /* background-color: #d48012c9;  */
    }
  
@@ -166,11 +168,14 @@
    
    
  }
+
+
+ 
  
  .dropdown-content a img {
    max-width: 50%;
  
- height: auto;
+ height: 240px;
  
  }
  

@@ -1,10 +1,5 @@
 
 
-body{
-    /* line-height: 1.5; */
-    font-size: 14px;
-}
-
 .footer-contenedor{
         padding-left: 15px;
         padding-right: 15px;
@@ -13,6 +8,7 @@ body{
         display: flex;
         width: 1460px;
         height: 373px;
+       
     }
     
 
@@ -23,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 0 0;
+    padding: 40px 0 40px 0;
 }
 
 
@@ -119,12 +115,6 @@ body{
   
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 
 .footer-columna:nth-child(5){
     /* background-color: red; */
@@ -154,7 +144,7 @@ li{
     list-style: none;
 }
 
-.footer-columna li a,h3{
+.footer-columna li a/*,h3*/{
     padding: 11px 0;
     color:#fff;
     display:inline-block;
@@ -188,26 +178,66 @@ h2{
 }
 
 
-@media(min-width:1500px){
-    .footer-contenedor{
+@media screen and (max-width:1500px){
+    /* .footer-contenedor{
         width:1470px;
     
-    }
+    } */
     }
         
-    @media(min-width:1100px){
+    @media screen and (max-width:1100px){
     .footer-contenedor{
         width:1100px;
         
         }
     }
        
-    @media(min-width:968px){
-        /* .footer-contenedor{
-            width:968px;
-            
-            } */
-    
+    @media screen and (max-width:968px){
+  /* .footer-contenedor{
+      width:968px;
+      
+      } */
+
+      .footer-contenedor {
+          width: 100%; /* Cambiamos el ancho a 100% para que se vea en vertical */
+          flex-direction: column; /* Cambiamos la dirección del flex a columna */
+          align-items: left; /* Centramos los elementos verticalmente */
+          text-align: left; /* Centramos el texto horizontalmente */
+          height: 1800px;                
+        }
+      
+
+        
+        .footer-columna {
+          width: 100%; /* Hacemos que las columnas ocupen todo el ancho disponible */
+          padding: 15px 0; /* Añadimos espaciado vertical entre las columnas */
+        }
+      
+        .footer-columna li {
+          text-align: left; /* Centramos el texto en cada columna */
+          margin-bottom: 15px; /* Añadimos espacio vertical entre los elementos de la lista */
+          border-bottom: none; /* Eliminamos el borde inferior en los elementos de la lista */
+        }
+      
+        .footer-columna li:first-child {
+          margin-top: 0; /* Quitamos el margen superior del primer elemento de la lista */
+        }
+
+        .footer-columna:nth-child(1),
+        .footer-columna:nth-child(2),
+        .footer-columna:nth-child(3),
+        .footer-columna:nth-child(4){
+          width: 100%;/*porque son 4*/
+          padding-left: 0;
+          padding-right: 15px;
+        
+      }
+
+  }
+
+
+
+  @media screen and (max-width:768px){
             .footer-contenedor {
                 width: 100%; /* Cambiamos el ancho a 100% para que se vea en vertical */
                 flex-direction: column; /* Cambiamos la dirección del flex a columna */
@@ -246,50 +276,10 @@ h2{
         }
 
 
-
-        @media(min-width:768px){
-            .footer-contenedor {
-                width: 100%; /* Cambiamos el ancho a 100% para que se vea en vertical */
-                flex-direction: column; /* Cambiamos la dirección del flex a columna */
-                align-items: left; /* Centramos los elementos verticalmente */
-                text-align: left; /* Centramos el texto horizontalmente */
-                height: 1800px;                
-              }
-            
-    
-              
-              .footer-columna {
-                width: 100%; /* Hacemos que las columnas ocupen todo el ancho disponible */
-                padding: 15px 0; /* Añadimos espaciado vertical entre las columnas */
-              }
-            
-              .footer-columna li {
-                text-align: left; /* Centramos el texto en cada columna */
-                margin-bottom: 15px; /* Añadimos espacio vertical entre los elementos de la lista */
-                border-bottom: none; /* Eliminamos el borde inferior en los elementos de la lista */
-              }
-            
-              .footer-columna li:first-child {
-                margin-top: 0; /* Quitamos el margen superior del primer elemento de la lista */
-              }
-    
-              .footer-columna:nth-child(1),
-              .footer-columna:nth-child(2),
-              .footer-columna:nth-child(3),
-              .footer-columna:nth-child(4){
-                width: 100%;/*porque son 4*/
-                padding-left: 0;
-                padding-right: 15px;
-              
-            }
-    
-        }
-
-
     
 
 
-        @media(min-width:425px){
+        @media screen and (max-width:425px){
             .footer-contenedor {
                 width: 100%; /* Cambiamos el ancho a 100% para que se vea en vertical */
                 flex-direction: column; /* Cambiamos la dirección del flex a columna */
@@ -331,7 +321,7 @@ h2{
         
         
 
-        @media(min-width:320px){
+        @media screen and (max-width:320px){
             
 
             .footer-contenedor {
