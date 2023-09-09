@@ -1,0 +1,365 @@
+
+
+.footer-contenedor{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto; 
+        margin-left: auto;
+        display: flex;
+        width: 1460px;
+        height: 373px;
+       
+    }
+    
+
+.footer{
+    background-color: #333;
+    color: #fff;
+    /* padding: 20px; Altura de footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+
+.footer-columna:nth-child(1){
+    width: 25%;/*porque son 4*/
+    padding-left: 0;
+    padding-right: 15px;
+  
+}
+
+.footer-columna:nth-child(1) li{
+/*para inicio*/
+    /* padding-bottom: 20px; */
+    padding: 11px 0;
+    color:#fff;
+    text-decoration: none;
+    
+}
+
+
+.footer-columna:nth-child(1) li:nth-child(1){
+    padding: 0px 0px;
+}
+
+
+.footer-contenedor img{
+    /* padding: 11px 0; */
+    width: 50px; 
+    /* height: auto; */
+    /* padding: 11px 0; */
+    display: block; 
+
+      padding: 20px 0 0px; 
+    /* width: 100%; */
+}
+
+
+
+.footer-columna:nth-child(2),.footer-columna:nth-child(3){
+    /* background-color: aqua; */
+    width: 25%;/*porque son 4*/
+    /* padding-bottom: 15px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.footer-columna:nth-child(2) h3::before,
+.footer-columna:nth-child(3) h3::before,
+.footer-columna:nth-child(4) h3::before
+{
+    content: " ";
+    display: block;
+    background: #0475be;
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.footer-columna:nth-child(2) h3,
+.footer-columna:nth-child(3) h3,
+.footer-columna:nth-child(4) h3{
+    position: relative;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 27px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    padding: 20px 0;
+}
+
+.footer-columna:nth-child(4){
+    /* background-color: aqua; */
+    width: 25%;/*porque son 4*/
+    /* padding-bottom: 15px; */
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.footer-columna:nth-child(2) li ,.footer-columna:nth-child(3) li,.footer-columna:nth-child(4) li{
+    border-bottom: 1px solid #747373;
+    
+}
+
+.footer-columna:nth-child(2) li:nth-child(1),.footer-columna:nth-child(3) li:nth-child(1){
+    border-bottom: none;
+  
+}
+
+
+.footer-columna:nth-child(5){
+    /* background-color: red; */
+    width: 25%;
+    
+      /* display: flex; */
+    /* flex-direction: column; */
+    padding-left: 15px;
+    /* padding-right: 15px; */
+}
+
+input, textarea{
+    border: 1px solid #747373;
+    margin: 0px 0px 10px;
+    padding:10px 15px;
+    width: 100%;
+    background-color: #333;
+ 
+}
+
+::placeholder{
+    color: #fff;
+}
+
+
+li{
+    list-style: none;
+}
+
+.footer-columna li a/*,h3*/{
+    padding: 11px 0;
+    color:#fff;
+    display:inline-block;
+    text-transform: capitalize;
+    text-decoration: none;
+  
+}
+
+.footer-columna li a:hover{
+    transition: all 500ms ease;
+    text-decoration: none;
+    cursor:pointer;
+    color: #428bca;
+}
+
+i{
+    padding-right: 10px;
+}
+
+h2{
+    /* content:''; */
+    display: block;
+    background-color:#0475be;
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+
+@media screen and (max-width:1500px){
+    /* .footer-contenedor{
+        width:1470px;
+    
+    } */
+    }
+        
+    @media screen and (max-width:1100px){
+    .footer-contenedor{
+        width:1100px;
+        
+        }
+    }
+       
+    @media screen and (max-width:968px){
+  /* .footer-contenedor{
+      width:968px;
+      
+      } */
+
+      .footer-contenedor {
+          width: 100%; /* Cambiamos el ancho a 100% para que se vea en vertical */
+          flex-direction: column; /* Cambiamos la dirección del flex a columna */
+          align-items: left; /* Centramos los elementos verticalmente */
+          text-align: left; /* Centramos el texto horizontalmente */
+          height: 1800px;                
+        }
+      
+
+        
+        .footer-columna {
+          width: 100%; /* Hacemos que las columnas ocupen todo el ancho disponible */
+          padding: 15px 0; /* Añadimos espaciado vertical entre las columnas */
+        }
+      
+        .footer-columna li {
+          text-align: left; /* Centramos el texto en cada columna */
+          margin-bottom: 15px; /* Añadimos espacio vertical entre los elementos de la lista */
+          border-bottom: none; /* Eliminamos el borde inferior en los elementos de la lista */
+        }
+      
+        .footer-columna li:first-child {
+          margin-top: 0; /* Quitamos el margen superior del primer elemento de la lista */
+        }
+
+        .footer-columna:nth-child(1),
+        .footer-columna:nth-child(2),
+        .footer-columna:nth-child(3),
+        .footer-columna:nth-child(4){
+          width: 100%;/*porque son 4*/
+          padding-left: 0;
+          padding-right: 15px;
+        
+      }
+
+  }
+
+
+
+  @media screen and (max-width:768px){
+            .footer-contenedor {
+                width: 100%; /* Cambiamos el ancho a 100% para que se vea en vertical */
+                flex-direction: column; /* Cambiamos la dirección del flex a columna */
+                align-items: left; /* Centramos los elementos verticalmente */
+                text-align: left; /* Centramos el texto horizontalmente */
+                height: 1800px;                
+              }
+            
+    
+              
+              .footer-columna {
+                width: 100%; /* Hacemos que las columnas ocupen todo el ancho disponible */
+                padding: 15px 0; /* Añadimos espaciado vertical entre las columnas */
+              }
+            
+              .footer-columna li {
+                text-align: left; /* Centramos el texto en cada columna */
+                margin-bottom: 15px; /* Añadimos espacio vertical entre los elementos de la lista */
+                border-bottom: none; /* Eliminamos el borde inferior en los elementos de la lista */
+              }
+            
+              .footer-columna li:first-child {
+                margin-top: 0; /* Quitamos el margen superior del primer elemento de la lista */
+              }
+    
+              .footer-columna:nth-child(1),
+              .footer-columna:nth-child(2),
+              .footer-columna:nth-child(3),
+              .footer-columna:nth-child(4){
+                width: 100%;/*porque son 4*/
+                padding-left: 0;
+                padding-right: 15px;
+              
+            }
+    
+        }
+
+
+    
+
+
+        @media screen and (max-width:425px){
+            .footer-contenedor {
+                width: 100%; /* Cambiamos el ancho a 100% para que se vea en vertical */
+                flex-direction: column; /* Cambiamos la dirección del flex a columna */
+                align-items: left; /* Centramos los elementos verticalmente */
+                text-align: left; /* Centramos el texto horizontalmente */
+                height: 1800px;                
+              }
+            
+    
+              
+              .footer-columna {
+                width: 100%; /* Hacemos que las columnas ocupen todo el ancho disponible */
+                padding: 15px 0; /* Añadimos espaciado vertical entre las columnas */
+              }
+            
+              .footer-columna li {
+                text-align: left; /* Centramos el texto en cada columna */
+                margin-bottom: 15px; /* Añadimos espacio vertical entre los elementos de la lista */
+                border-bottom: none; /* Eliminamos el borde inferior en los elementos de la lista */
+              }
+            
+              .footer-columna li:first-child {
+                margin-top: 0; /* Quitamos el margen superior del primer elemento de la lista */
+              }
+    
+              .footer-columna:nth-child(1),
+              .footer-columna:nth-child(2),
+              .footer-columna:nth-child(3),
+              .footer-columna:nth-child(4){
+                width: 100%;/*porque son 4*/
+                padding-left: 0;
+                padding-right: 15px;
+              
+            }
+    
+        }
+
+
+        
+        
+
+        @media screen and (max-width:320px){
+            
+
+            .footer-contenedor {
+                width: 100%; /* Cambiamos el ancho a 100% para que se vea en vertical */
+                flex-direction: column; /* Cambiamos la dirección del flex a columna */
+                align-items: left; /* Centramos los elementos verticalmente */
+                text-align: left; /* Centramos el texto horizontalmente */
+                height: 1800px;                
+              }
+            
+    
+              
+              .footer-columna {
+                width: 100%; /* Hacemos que las columnas ocupen todo el ancho disponible */
+                padding: 15px 0; /* Añadimos espaciado vertical entre las columnas */
+              }
+            
+              .footer-columna li {
+                text-align: left; /* Centramos el texto en cada columna */
+                margin-bottom: 15px; /* Añadimos espacio vertical entre los elementos de la lista */
+                border-bottom: none; /* Eliminamos el borde inferior en los elementos de la lista */
+              }
+            
+              .footer-columna li:first-child {
+                margin-top: 0; /* Quitamos el margen superior del primer elemento de la lista */
+              }
+    
+              .footer-columna:nth-child(1),
+              .footer-columna:nth-child(2),
+              .footer-columna:nth-child(3),
+              .footer-columna:nth-child(4){
+                width: 100%;/*porque son 4*/
+                padding-left: 0;
+                padding-right: 15px;
+              
+            }
+    
+        }
+
+
+        
