@@ -69,7 +69,7 @@
 
  
    .navbar a:hover,
- .dropdown:hover .dropbtn {
+ .dropdown-ima:hover .dropbtn {
     /* background-color: rgb(70, 65, 65); agrega color de fondo al pasar el mouse */
    color: rgba(18, 183, 212, 0.911); /* Cambia el color de la letra a celeste */
    /* padding: 29px 16px; */
@@ -84,14 +84,14 @@
      overflow: clip;
  }
  
-   .dropdown {
+   .dropdown-ima {
      float: left;
      overflow: hidden;
      
    }
  
  /*IMPRESORA*/
-   .dropdown .dropbtn {
+   .dropdown-ima .dropbtn {
      font-size: 16px;
      border: none;
      outline: none;
@@ -105,7 +105,7 @@
    }
  
   
-   .dropdown-content {
+   .dropdown-content-ima {
  /* 
       padding-inline-start: 40px;
      padding-inline-end: 20px; */
@@ -135,7 +135,7 @@
  
    }
  
-   .dropdown-content a {
+   .dropdown-content-ima a {
      /* float: none; */
      /*LETRAS DEL OPCIONES DEL MENU DESPLEGADO*/
      color: black;
@@ -148,17 +148,17 @@
      height: 312px;
    }
  
-   .dropdown-content:hover {
+   .dropdown-content-ima:hover {
       /* background-color: #d48012c9;  */
    }
  
-   .dropdown:hover .dropdown-content {
+   .dropdown-ima:hover .dropdown-content-ima {
      display: block;
      /*color transparente*/
      /* background-color: rgba(233, 19, 19, 0.01); */
    }
  
- .dropdown-content a {
+ .dropdown-content-ima a {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -172,7 +172,7 @@
 
  
  
- .dropdown-content a img {
+ .dropdown-content-ima a img {
    max-width: 50%;
  
  height: 240px;
@@ -182,7 +182,7 @@
  
  
  
- .dropdown-content a:hover {
+ .dropdown-content-ima a:hover {
       /*CAMBIAR COLOR CUANDO PASA EL MOUSE*/
       /* background-color: #ddd;  */
    /* color: rgb(138, 34, 115); Cambia el color de la letra a celeste al pasar el mouse */

@@ -126,7 +126,8 @@
     /* padding-right: 15px; */
 }
 
-input, textarea{
+/*Ate - Yessi - Esplicificar la classe mas etiqueta, para que no altere de manera general*/
+.footer-columna input, .footer-columna textarea{
     border: 1px solid #747373;
     margin: 0px 0px 10px;
     padding:10px 15px;
@@ -164,8 +165,9 @@ i{
     padding-right: 10px;
 }
 
-h2{
-    /* content:''; */
+/*Ate Yessi - En el footer No hay ninguna etiqueta h2 */
+/*h2{
+     /*content:'';/ 
     display: block;
     background-color:#0475be;
     width: 40px;
@@ -176,7 +178,7 @@ h2{
     z-index: 1;
 
 }
-
+*/
 
 @media screen and (max-width:1500px){
     /* .footer-contenedor{
